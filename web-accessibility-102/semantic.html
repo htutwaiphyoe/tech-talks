@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic HTML</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+      }
+      button,
+      div {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 2px solid #000;
+        background-color: #f0f0f0;
+        margin: 10px;
+      }
+      button:disabled,
+      div[aria-disabled="true"] {
+        color: #666;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="alert('Button clicked!')">Click me (btn)</button>
+    <div onclick="alert('Button clicked!')">Click me (div)</div>
+
+    <!-- <button onclick="alert('Button clicked!')" disabled>Click me (btn)</button>
+    <div
+      onclick="alert('Button clicked!')"
+      role="button"
+      tabindex="0"
+      aria-label="Click"
+      onkeypress="alert('Button clicked!')"
+      aria-disabled="true"
+      disabled
+    >
+      Click me (div)
+    </div> -->
+  </body>
+</html>
