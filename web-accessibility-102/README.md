@@ -2,4 +2,4 @@
 
 This session is a follow-up session for Web Accessibility
 
-Slide: [Slide](https://www.canva.com/design/DAG5Ns4ucVA/fodbIwdDdxY8XTYa0XFHrA/edit?utm_content=DAG5Ns4ucVA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+Slide: [Slide](https://docs.google.com/presentation/d/17-f2YDJfwmP3GKqPMKQSRfgdzNrh_wvsG6PnQ-Tz8BA/edit?usp=sharing)
