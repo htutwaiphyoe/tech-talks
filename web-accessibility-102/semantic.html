@@ -21,16 +21,24 @@
         background-color: #f0f0f0;
         margin: 10px;
       }
-      button:disabled,
       div[aria-disabled="true"] {
         color: #666;
         background-color: #ccc;
+        pointer-events: none;
       }
     </style>
   </head>
   <body>
-    <button onclick="alert('Button clicked!')">Click me (btn)</button>
-    <div onclick="alert('Button clicked!')">Click me (div)</div>
+    <button onclick="alert('Button clicked!')" disabled>Click me (btn)</button>
+    <div
+      tabindex="0"
+      role="button"
+      onclick="alert('Button clicked!')"
+      onkeypress="alert('Button clicked!')"
+      aria-disabled="true"
+    >
+      Click me (div)
+    </div>
 
     <!-- <button onclick="alert('Button clicked!')" disabled>Click me (btn)</button>
     <div
@@ -39,7 +47,7 @@
       tabindex="0"
       aria-label="Click"
       onkeypress="alert('Button clicked!')"
-      aria-disabled="true"
+  
       disabled
     >
       Click me (div)
